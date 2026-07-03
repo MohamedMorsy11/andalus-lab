@@ -1,0 +1,132 @@
+.services {
+  padding: var(--spacing-section) 0;
+  position: relative;
+  background-color: var(--bg-main);
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.leftCol {
+  flex: 1;
+  position: relative;
+}
+
+.stickyWrapper {
+  position: sticky;
+  top: 150px;
+}
+
+.title {
+  font-size: 4.5rem;
+  font-weight: 900;
+  color: var(--text-main);
+  letter-spacing: -0.04em;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.desc {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 450px;
+}
+
+.rightCol {
+  flex: 1.2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.card {
+  padding: 35px 25px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.cardGlow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(225, 29, 72, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: var(--color-primary);
+  box-shadow: 0 30px 60px -15px rgba(10, 37, 64, 0.15);
+}
+
+.card:hover .cardGlow {
+  opacity: 1;
+}
+
+.iconBox {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-main));
+  border: 1px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  box-shadow: 0 10px 20px -5px rgba(0,0,0,0.05);
+  transition: all 0.4s ease;
+}
+
+.card:hover .iconBox {
+  background: var(--color-primary);
+  color: white;
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .stickyWrapper {
+    position: relative;
+    top: 0;
+  }
+  
+  .title {
+    font-size: 3.5rem;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,222 @@
+.sectionTitle {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 80px;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+/* Quiz */
+.quizSection {
+  background-color: var(--bg-main);
+  padding: var(--spacing-section) 0;
+  position: relative;
+}
+.quizCard {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  text-align: center;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 40px 100px -20px rgba(0,0,0,0.1);
+  background: linear-gradient(180deg, var(--glass-bg) 0%, rgba(255,255,255,0.4) 100%);
+  border: 1px solid var(--glass-border);
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme='dark'] .quizCard {
+  background: linear-gradient(180deg, var(--glass-bg) 0%, rgba(0,0,0,0.4) 100%);
+}
+
+.quizCard h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+.quizCard h3 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.quizCard p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 40px;
+}
+
+.options {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+.optionBtn {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.4s ease;
+}
+
+[data-theme='dark'] .optionBtn {
+  color: white;
+  border-color: white;
+}
+
+.optionBtn:hover {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px -5px var(--color-primary);
+}
+
+/* FAQ */
+.faqSection {
+  background-color: var(--bg-secondary);
+  padding: var(--spacing-section) 0;
+}
+.faqList {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.faqItem {
+  border-bottom: 1px solid var(--glass-border);
+  overflow: hidden;
+  transition: background-color 0.4s ease;
+}
+.faqItem:first-child {
+  border-top: 1px solid var(--glass-border);
+}
+.faqQuestion {
+  width: 100%;
+  text-align: right; 
+  padding: 35px 20px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-main);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: inherit;
+  transition: color 0.3s ease;
+}
+[dir="ltr"] .faqQuestion {
+  text-align: left;
+}
+.faqQuestion:hover {
+  color: var(--color-primary);
+}
+.faqOpen .faqQuestion {
+  color: var(--color-primary);
+}
+.faqAnswer {
+  padding: 0 20px 35px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1.15rem;
+}
+
+/* Reviews */
+.reviewsSection {
+  background-color: var(--bg-main);
+  padding: var(--spacing-section) 0;
+  overflow: hidden;
+}
+.reviewsScroll {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  padding: 20px 20px 60px 20px;
+  scrollbar-width: none; /* hide scrollbar for sleekness */
+}
+.reviewsScroll::-webkit-scrollbar {
+  display: none;
+}
+.reviewCard {
+  min-width: 450px;
+  padding: 50px;
+  border-radius: var(--radius-lg);
+  flex-shrink: 0;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 20px 40px -10px rgba(0,0,0,0.05);
+  transition: transform 0.4s ease;
+}
+.reviewCard:hover {
+  transform: translateY(-10px);
+  border-color: var(--color-primary);
+}
+.reviewText {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 30px;
+  color: var(--text-main);
+  line-height: 1.8;
+}
+.reviewName {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.reviewName::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  .quizCard {
+    padding: 40px 20px;
+  }
+  .quizCard h2 {
+    font-size: 2rem;
+  }
+  .quizCard h3 {
+    font-size: 1.5rem;
+  }
+  .quizCard p {
+    font-size: 1rem;
+  }
+  .options {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .faqQuestion {
+    font-size: 1.2rem;
+    padding: 25px 15px;
+  }
+  .faqAnswer {
+    padding: 0 15px 25px;
+  }
+  .reviewCard {
+    min-width: 300px;
+    padding: 30px;
+  }
+  .reviewText {
+    font-size: 1.1rem;
+  }
+}

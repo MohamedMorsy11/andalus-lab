@@ -1,0 +1,192 @@
+{
+  "ar": {
+    "nav": {
+      "home": "الرئيسية",
+      "why_us": "لماذا نحن",
+      "packages": "الباقات",
+      "doctor": "طبيبتنا",
+      "services": "خدماتنا",
+      "faq": "الأسئلة الشائعة",
+      "contact": "تواصل معنا"
+    },
+    "hero": {
+      "title": "معمل الأندلس",
+      "subtitle": "للتحاليل الإكلينيكية والباثولوجية",
+      "description": "نقدم أدق النتائج وأفضل رعاية طبية بفضل فريقنا الطبي المتميز.",
+      "cta": "احجز الآن",
+      "cta_whatsapp": "تواصل عبر واتساب"
+    },
+    "why_us": {
+      "title": "لماذا تختار الأندلس؟",
+      "features": [
+        { "id": 1, "title": "دقة متناهية", "desc": "أحدث الأجهزة لضمان أدق النتائج." },
+        { "id": 2, "title": "سرعة الإنجاز", "desc": "تسليم النتائج في أسرع وقت." },
+        { "id": 3, "title": "رعاية متميزة", "desc": "فريق طبي متكامل يهتم بصحتك." }
+      ]
+    },
+    "packages": {
+      "title": "باقاتنا المميزة",
+      "list": [
+        { "id": 1, "name": "أبطال الأندلس", "old_price": 850, "new_price": 499, "currency": "ج.م", "desc": "باقة التحاليل الشاملة" },
+        { "id": 2, "name": "البركة", "old_price": 850, "new_price": 525, "currency": "ج.م", "desc": "لكبار السن ومرضى السكر" },
+        { "id": 3, "name": "ميزان الصحة", "old_price": 1400, "new_price": 750, "currency": "ج.م", "desc": "فحص شامل لأجهزة الجسم" },
+        { "id": 4, "name": "تحدي الأنيميا", "old_price": 800, "new_price": 450, "currency": "ج.م", "desc": "لفحص وعلاج فقر الدم" },
+        { "id": 5, "name": "مفاتيح الحرق", "old_price": 850, "new_price": 515, "currency": "ج.م", "desc": "لتحليل مشاكل السمنة والحرق" },
+        { "id": 6, "name": "حارس القلب", "old_price": 800, "new_price": 500, "currency": "ج.م", "desc": "للاطمئنان على صحة القلب والكولسترول" },
+        { "id": 7, "name": "الهضم الآمن", "old_price": 550, "new_price": 325, "currency": "ج.م", "desc": "لأمراض الجهاز الهضمي والجرثومة" },
+        { "id": 8, "name": "الفلتر النقي", "old_price": 950, "new_price": 650, "currency": "ج.م", "desc": "للاطمئنان على الكلى والكبد" },
+        { "id": 9, "name": "العظام والمفاصل", "old_price": 800, "new_price": 499, "currency": "ج.م", "desc": "لفحص الكالسيوم والروماتيزم" }
+      ]
+    },
+    "doctor": {
+      "title": "طبيبتنا المتميزة",
+      "name": "د/ ريم علي درويش",
+      "role": "استشاري تحاليل أنسجة وخلايا بمعهد الأورام طنطا",
+      "desc": "خبرة واسعة في مجال التحاليل الطبية والباثولوجية لضمان دقة التشخيص."
+    },
+    "services": {
+      "title": "خدماتنا",
+      "list": [
+        "تحاليل الدم",
+        "تحاليل الهرمونات",
+        "تحاليل الأنسجة والخلايا",
+        "تحاليل الفيروسات",
+        "دلالات الأورام",
+        "الزيارة المنزلية"
+      ]
+    },
+    "home_visit": {
+      "title": "خدمة الزيارة المنزلية",
+      "desc": "نوفر لك خدمة سحب العينات من المنزل لراحتك.",
+      "cta": "اطلب الآن"
+    },
+    "quiz": {
+      "title": "لا تعرف أي باقة تناسبك؟",
+      "desc": "أجب على بعض الأسئلة لنقترح لك الباقة الأنسب.",
+      "start": "ابدأ الاختبار",
+      "q1": "ما هو هدفك الأساسي؟",
+      "o1": "فحص شامل",
+      "o2": "أمراض محددة (سكر، ضغط)",
+      "result": "بناءً على إجابتك، نقترح لك باقة ميزان الصحة!"
+    },
+    "faq": {
+      "title": "الأسئلة الشائعة",
+      "list": [
+        { "q": "متى أستلم النتيجة؟", "a": "يتم إرسال النتائج عبر واتساب في نفس اليوم لمعظم التحاليل." },
+        { "q": "هل يجب الحجز المسبق؟", "a": "يفضل الحجز، ولكن نستقبل الحالات بدون حجز مسبق." }
+      ]
+    },
+    "reviews": {
+      "title": "آراء العملاء",
+      "list": [
+        { "id": 1, "name": "أحمد محمود", "text": "معمل ممتاز ودقة في المواعيد." },
+        { "id": 2, "name": "سارة علي", "text": "طاقم العمل متعاون جداً والنتائج سريعة." }
+      ]
+    },
+    "contact": {
+      "title": "تواصل معنا",
+      "address": "سبرباي - برج العياري فوق مطعم كشري عدس - الدور الرابع",
+      "hours": "10 صباحاً - 10 مساءً (الجمعة مغلق)",
+      "phone": "01005381032",
+      "whatsapp_msg": "السلام عليكم، أريد حجز باقة"
+    },
+    "footer": {
+      "text": "جميع الحقوق محفوظة © معمل الأندلس"
+    }
+  },
+  "en": {
+    "nav": {
+      "home": "Home",
+      "why_us": "Why Us",
+      "packages": "Packages",
+      "doctor": "Our Doctor",
+      "services": "Services",
+      "faq": "FAQ",
+      "contact": "Contact"
+    },
+    "hero": {
+      "title": "Andalus Lab",
+      "subtitle": "For Clinical & Pathological Analysis",
+      "description": "We provide the most accurate results and best medical care.",
+      "cta": "Book Now",
+      "cta_whatsapp": "Contact via WhatsApp"
+    },
+    "why_us": {
+      "title": "Why Choose Andalus?",
+      "features": [
+        { "id": 1, "title": "High Accuracy", "desc": "Latest equipment ensuring the most accurate results." },
+        { "id": 2, "title": "Fast Results", "desc": "Delivering results in the fastest time possible." },
+        { "id": 3, "title": "Premium Care", "desc": "An integrated medical team caring for your health." }
+      ]
+    },
+    "packages": {
+      "title": "Our Premium Packages",
+      "list": [
+        { "id": 1, "name": "Andalus Heroes", "old_price": 850, "new_price": 499, "currency": "EGP", "desc": "Comprehensive tests package" },
+        { "id": 2, "name": "Al Baraka", "old_price": 850, "new_price": 525, "currency": "EGP", "desc": "For seniors and diabetic patients" },
+        { "id": 3, "name": "Health Balance", "old_price": 1400, "new_price": 750, "currency": "EGP", "desc": "Full body checkup" },
+        { "id": 4, "name": "Anemia Challenge", "old_price": 800, "new_price": 450, "currency": "EGP", "desc": "For checking and treating anemia" },
+        { "id": 5, "name": "Burn Keys", "old_price": 850, "new_price": 515, "currency": "EGP", "desc": "Analyzing obesity and metabolism" },
+        { "id": 6, "name": "Heart Guardian", "old_price": 800, "new_price": 500, "currency": "EGP", "desc": "Checking heart health and cholesterol" },
+        { "id": 7, "name": "Safe Digestion", "old_price": 550, "new_price": 325, "currency": "EGP", "desc": "For digestive system diseases" },
+        { "id": 8, "name": "Pure Filter", "old_price": 950, "new_price": 650, "currency": "EGP", "desc": "Checking Kidney and Liver" },
+        { "id": 9, "name": "Bones and Joints", "old_price": 800, "new_price": 499, "currency": "EGP", "desc": "Checking Calcium and Rheumatism" }
+      ]
+    },
+    "doctor": {
+      "title": "Our Distinguished Doctor",
+      "name": "Dr. Reem Ali Darwish",
+      "role": "Consultant of Tissue and Cell Analysis at Tanta Cancer Institute",
+      "desc": "Extensive experience in medical and pathological analysis ensuring accurate diagnosis."
+    },
+    "services": {
+      "title": "Our Services",
+      "list": [
+        "Blood Tests",
+        "Hormone Tests",
+        "Tissue & Cell Analysis",
+        "Virus Tests",
+        "Tumor Markers",
+        "Home Visit"
+      ]
+    },
+    "home_visit": {
+      "title": "Home Visit Service",
+      "desc": "We provide home sample collection for your comfort.",
+      "cta": "Request Now"
+    },
+    "quiz": {
+      "title": "Not sure which package?",
+      "desc": "Answer a few questions to get a recommendation.",
+      "start": "Start Quiz",
+      "q1": "What is your main goal?",
+      "o1": "General Checkup",
+      "o2": "Specific concerns (Diabetes, Blood pressure)",
+      "result": "Based on your answer, we recommend the Health Balance Package!"
+    },
+    "faq": {
+      "title": "FAQ",
+      "list": [
+        { "q": "When do I get the results?", "a": "Results are sent via WhatsApp on the same day for most tests." },
+        { "q": "Do I need to book in advance?", "a": "Booking is preferred, but walk-ins are welcome." }
+      ]
+    },
+    "reviews": {
+      "title": "Customer Reviews",
+      "list": [
+        { "id": 1, "name": "Ahmed Mahmoud", "text": "Excellent lab and very punctual." },
+        { "id": 2, "name": "Sarah Ali", "text": "Very cooperative staff and fast results." }
+      ]
+    },
+    "contact": {
+      "title": "Contact Us",
+      "address": "Seberbay - Al Ayari Tower above Koshary Adas - 4th Floor",
+      "hours": "10 AM - 10 PM (Friday Closed)",
+      "phone": "01005381032",
+      "whatsapp_msg": "Hello, I want to book the package"
+    },
+    "footer": {
+      "text": "All rights reserved © Andalus Lab"
+    }
+  }
+}

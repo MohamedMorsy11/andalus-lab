@@ -1,0 +1,149 @@
+:root {
+  /* Premium Brand Colors */
+  --color-primary: #0a2540; /* Deep luxury blue */
+  --color-primary-light: #164070;
+  --color-accent: #e11d48; /* Premium elegant red */
+  
+  /* Light Theme */
+  --bg-main: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-card: rgba(255, 255, 255, 0.7);
+  --text-main: #0f172a;
+  --text-secondary: #475569;
+  
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.6);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  
+  /* Layout & Spacing */
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+  --shadow-sm: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+  --spacing-section: 80px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --spacing-section: 40px;
+  }
+}
+
+[data-theme='dark'] {
+  /* Dark Theme */
+  --bg-main: #020617; /* True luxury deep black/blue */
+  --bg-secondary: #0f172a;
+  --bg-card: rgba(15, 23, 42, 0.7);
+  --text-main: #f8fafc;
+  --text-secondary: #94a3b8;
+  
+  /* Glassmorphism Dark */
+  --glass-bg: rgba(15, 23, 42, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Cairo', 'Inter', system-ui, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  transition: background-color 0.4s ease, color 0.4s ease;
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Premium Glassmorphism Utility */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: var(--radius-md);
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px; /* Wider for premium feel */
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Section Spacing */
+section {
+  padding: var(--spacing-section) 0;
+  position: relative;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  color: var(--color-primary);
+  margin-bottom: 1.2rem;
+  letter-spacing: -0.02em;
+}
+
+[data-theme='dark'] h1, 
+[data-theme='dark'] h2, 
+[data-theme='dark'] h3, 
+[data-theme='dark'] h4 {
+  color: #e2e8f0; /* Softer white for dark mode */
+}
+
+/* Premium Button styles */
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 20px -10px var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px -10px var(--color-primary);
+  background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary));
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  will-change: transform, background-color;
+}
+
+[data-theme='dark'] .btn-secondary {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-secondary:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
