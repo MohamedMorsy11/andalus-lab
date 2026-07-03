@@ -1,20 +1,189 @@
-<!doctype html>
-<html lang="ar">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/logo.png.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
-    
-    <!-- Preconnect for performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Preload critical fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-    
-    <title>معمل الأندلس للتحاليل</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andalus Lab</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="public/logo.png.png">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light">
+  <nav class="navbar" id="navbar">
+    <div class="logo-container">
+      <img src="public/logo.png.png" alt="Logo" class="nav-logo">
+      <span class="nav-title" data-i18n="hero.title">معمل الأندلس</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero" data-i18n="nav.home">الرئيسية</a></li>
+      <li><a href="#why-us" data-i18n="nav.why_us">لماذا نحن</a></li>
+      <li><a href="#packages" data-i18n="nav.packages">الباقات</a></li>
+      <li><a href="#doctor" data-i18n="nav.doctor">طبيبتنا</a></li>
+      <li><a href="#services" data-i18n="nav.services">خدماتنا</a></li>
+      <li><a href="#faq" data-i18n="nav.faq">الأسئلة الشائعة</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button id="theme-toggle" class="control-btn" aria-label="Toggle Theme">🌙</button>
+      <button id="lang-toggle" class="control-btn" aria-label="Toggle Language">EN</button>
+      <button id="mobile-menu-btn" class="mobile-menu-btn">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content fade-in">
+      <h1 data-i18n="hero.title">معمل الأندلس</h1>
+      <h2 data-i18n="hero.subtitle">للتحاليل الإكلينيكية والباثولوجية</h2>
+      <p data-i18n="hero.description">نقدم أدق النتائج وأفضل رعاية طبية بفضل فريقنا الطبي المتميز.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary" data-i18n="hero.cta">احجز الآن</a>
+        <a href="https://wa.me/201005381032" class="btn-secondary" target="_blank" data-i18n="hero.cta_whatsapp">تواصل عبر واتساب</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us Section -->
+  <section id="why-us" class="whyUs">
+    <div class="container">
+      <div class="header slide-up">
+        <h2 class="title" data-i18n="why_us.title">لماذا تختار الأندلس؟</h2>
+      </div>
+      <div class="grid">
+        <div class="card fade-in" style="transition-delay: 0.1s">
+          <div class="icon-container">⭐</div>
+          <h3 data-i18n="why_us.features.0.title">دقة متناهية</h3>
+          <p data-i18n="why_us.features.0.desc">أحدث الأجهزة لضمان أدق النتائج.</p>
+        </div>
+        <div class="card fade-in" style="transition-delay: 0.2s">
+          <div class="icon-container">⚡</div>
+          <h3 data-i18n="why_us.features.1.title">سرعة الإنجاز</h3>
+          <p data-i18n="why_us.features.1.desc">تسليم النتائج في أسرع وقت.</p>
+        </div>
+        <div class="card fade-in" style="transition-delay: 0.3s">
+          <div class="icon-container">❤️</div>
+          <h3 data-i18n="why_us.features.2.title">رعاية متميزة</h3>
+          <p data-i18n="why_us.features.2.desc">فريق طبي متكامل يهتم بصحتك.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section id="packages" class="packages-section">
+    <div class="container">
+      <h2 class="sectionTitle slide-up" data-i18n="packages.title">باقاتنا المميزة</h2>
+      <div class="packages-grid">
+        <div class="package-card fade-in">
+          <div class="package-header">
+            <h3 data-i18n="packages.list.0.name">أبطال الأندلس</h3>
+            <div class="price-container">
+              <span class="old-price" data-i18n="packages.list.0.old_price">850 ج.م</span>
+              <span class="new-price" data-i18n="packages.list.0.new_price">499 ج.م</span>
+            </div>
+          </div>
+          <p class="package-desc" data-i18n="packages.list.0.desc">باقة التحاليل الشاملة</p>
+          <a href="https://wa.me/201005381032?text=السلام عليكم، أريد حجز باقة أبطال الأندلس" class="book-btn" target="_blank" data-i18n="hero.cta">احجز الآن</a>
+        </div>
+        <div class="package-card fade-in">
+          <div class="package-header">
+            <h3 data-i18n="packages.list.1.name">البركة</h3>
+            <div class="price-container">
+              <span class="old-price" data-i18n="packages.list.1.old_price">850 ج.م</span>
+              <span class="new-price" data-i18n="packages.list.1.new_price">525 ج.م</span>
+            </div>
+          </div>
+          <p class="package-desc" data-i18n="packages.list.1.desc">لكبار السن ومرضى السكر</p>
+          <a href="https://wa.me/201005381032?text=السلام عليكم، أريد حجز باقة البركة" class="book-btn" target="_blank" data-i18n="hero.cta">احجز الآن</a>
+        </div>
+        <div class="package-card fade-in">
+          <div class="package-header">
+            <h3 data-i18n="packages.list.2.name">ميزان الصحة</h3>
+            <div class="price-container">
+              <span class="old-price" data-i18n="packages.list.2.old_price">1400 ج.م</span>
+              <span class="new-price" data-i18n="packages.list.2.new_price">750 ج.م</span>
+            </div>
+          </div>
+          <p class="package-desc" data-i18n="packages.list.2.desc">فحص شامل لأجهزة الجسم</p>
+          <a href="https://wa.me/201005381032?text=السلام عليكم، أريد حجز باقة ميزان الصحة" class="book-btn" target="_blank" data-i18n="hero.cta">احجز الآن</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctor Section -->
+  <section id="doctor" class="doctor-section">
+    <div class="container">
+      <div class="doctor-content">
+        <div class="doctor-image-container fade-in">
+          <img src="public/doctor.png" alt="Doctor" class="doctor-img">
+        </div>
+        <div class="doctor-info slide-up">
+          <h2 class="title" data-i18n="doctor.title">طبيبتنا المتميزة</h2>
+          <h3 class="name" data-i18n="doctor.name">د/ ريم علي درويش</h3>
+          <p class="role" data-i18n="doctor.role">استشاري تحاليل أنسجة وخلايا بمعهد الأورام طنطا</p>
+          <p class="desc" data-i18n="doctor.desc">خبرة واسعة في مجال التحاليل الطبية والباثولوجية لضمان دقة التشخيص.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="sectionTitle slide-up" data-i18n="services.title">خدماتنا</h2>
+      <div class="services-grid">
+        <div class="service-card fade-in" data-i18n="services.list.0">تحاليل الدم</div>
+        <div class="service-card fade-in" data-i18n="services.list.1">تحاليل الهرمونات</div>
+        <div class="service-card fade-in" data-i18n="services.list.2">تحاليل الأنسجة والخلايا</div>
+        <div class="service-card fade-in" data-i18n="services.list.3">تحاليل الفيروسات</div>
+        <div class="service-card fade-in" data-i18n="services.list.4">دلالات الأورام</div>
+        <div class="service-card fade-in" data-i18n="services.list.5">الزيارة المنزلية</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="sectionTitle slide-up" data-i18n="contact.title">تواصل معنا</h2>
+      <div class="contact-content">
+        <div class="contact-info slide-up">
+          <div class="contact-item">
+            <span class="icon">📍</span>
+            <p data-i18n="contact.address">سبرباي - برج العياري فوق مطعم كشري عدس - الدور الرابع</p>
+          </div>
+          <div class="contact-item">
+            <span class="icon">🕒</span>
+            <p data-i18n="contact.hours">10 صباحاً - 10 مساءً (الجمعة مغلق)</p>
+          </div>
+          <div class="contact-item">
+            <span class="icon">📞</span>
+            <p data-i18n="contact.phone">01005381032</p>
+          </div>
+        </div>
+        <div class="map-container fade-in">
+          <iframe 
+            src="https://maps.google.com/maps?q=30.7865086,31.0003757&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border: 0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <img src="public/logo.png.png" alt="Logo" class="footer-logo">
+      <p data-i18n="footer.text">جميع الحقوق محفوظة © معمل الأندلس</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
